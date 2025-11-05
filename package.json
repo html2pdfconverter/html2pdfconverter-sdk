@@ -1,6 +1,6 @@
 {
     "name": "html2pdfconverter-sdk",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Official Node.js SDK for the HTML2PDFConverter API",
     "type": "commonjs",
     "main": "./dist/cjs/pdf-client.cjs",
