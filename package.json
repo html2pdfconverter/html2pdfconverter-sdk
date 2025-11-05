@@ -1,0 +1,46 @@
+{
+    "name": "html2pdfconverter-sdk",
+    "version": "1.0.0",
+    "description": "Official Node.js SDK for the HTML2PDFConverter API",
+    "type": "commonjs",
+    "main": "./dist/cjs/pdf-client.cjs",
+    "module": "./dist/esm/pdf-client.js",
+    "types": "./dist/esm/pdf-client.d.ts",
+    "exports": {
+        "import": "./dist/esm/pdf-client.js",
+        "require": "./dist/cjs/pdf-client.cjs"
+    },
+    "scripts": {
+        "build": "tsc && tsc --module CommonJS --outDir dist/cjs && mv dist/cjs/pdf-client.js dist/cjs/pdf-client.cjs",
+        "prepare": "npm run build",
+        "clean": "rm -rf dist",
+        "test": "jest"
+    },
+    "keywords": [
+        "pdf",
+        "html",
+        "html-to-pdf",
+        "sdk",
+        "api",
+        "html2pdfconverter",
+        "html2pdf",
+        "converter"
+    ],
+    "author": "HTML2PDFConverter Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/html2pdfconverter/html2pdfconverter-sdk.git"
+    },
+    "dependencies": {
+        "axios": "^1.7.0",
+        "form-data": "^4.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^24.9.2",
+        "jest": "^30.2.0",
+        "ts-jest": "^29.4.5",
+        "typescript": "^5.3.0"
+    }
+}
