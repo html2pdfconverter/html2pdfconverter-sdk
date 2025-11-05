@@ -5,7 +5,7 @@
 [![Node.js CI](https://img.shields.io/badge/Node.js-%3E%3D16-green)](https://nodejs.org/)
 [![Downloads](https://img.shields.io/npm/dt/html2pdfconverter-sdk.svg?style=flat-square)](https://www.npmjs.com/package/html2pdfconverter-sdk)
 
-> 🚀 Convert HTML, URLs, or uploaded `.html` files into high-quality PDFs effortlessly — powered by the [HTML2PDFConverter API](https://api.html2pdfconverter.com).
+> 🚀 Convert HTML, URLs, or uploaded `.html` files into high-quality PDFs effortlessly — powered by the [HTML2PDFConverter API](https://www.html2pdfconverter.com).
 
 ---
 
@@ -191,10 +191,13 @@ Common errors:
 | Plan       | Max HTML Size | Max Timeout |
 | ---------- | ------------- | ----------- |
 | Free       | 5 MB          | 30 s        |
-| Starter    | 10 MB         | 60 s        |
-| Pro        | 25 MB         | 2 min       |
-| Scale      | 50 MB         | 5 min       |
-| Enterprise | 100 MB        | 5 min       |
+| Basic      | 10 MB         | 5 min       |
+| Standard   | 25 MB         | 10 min      |
+| Premium    | 50 MB         | 15 min      |
+| Growth     | 75 MB         | 15 min      |
+| Scale      | 100 MB        | 15 min      |
+| ProMax     | 100 MB        | 15 min      |
+| Enterprise | 100 MB        | 15 min      |
 
 ## 🧩 TypeScript Support
 
@@ -223,9 +226,9 @@ npx html2pdfconverter-sdk convert ./file.html --save ./output.pdf
 ### We recommend server-side usage since API keys must be kept secret.
 
 ## 🧾 License
-MIT © [HTML2PDFConverter](https://api.html2pdfconverter.com).
+MIT © [HTML2PDFConverter](https://www.html2pdfconverter.com).
 
 ## 🌟 Contribute
 
 Issues and pull requests welcome at
-👉 [https://github.com/html2pdfconverter/sdk](https://github.com/html2pdfconverter/sdk)
+👉 [https://github.com/html2pdfconverter/html2pdfconverter-sdk](https://github.com/html2pdfconverter/html2pdfconverter-sdk)
