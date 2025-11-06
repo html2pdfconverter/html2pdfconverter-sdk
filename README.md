@@ -66,8 +66,6 @@ const client = new PdfClient({
 
 # 🧱 Usage Examples
 
-## 🧱 Usage Examples
-
 ```ts
 const pdf = await client.convert({
   url: "https://example.com/invoice",

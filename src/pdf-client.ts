@@ -138,7 +138,19 @@ export class PdfClient {
     const start = Date.now();
 
     while (true) {
-      const { data: job } = await this.client.get<PdfJobResponse>(`/jobs/${jobId}`);
+      let job: PdfJobResponse;
+      try {
+        const res = await this.client.get<PdfJobResponse>(`/jobs/${jobId}`);
+        job = res.data;
+      } catch (error: any) {
+        if (axios.isAxiosError(error)) {
+          const status = error.response?.status;
+          const message = error.response?.data?.message || error.message;
+          throw new Error(`PDF job status check failed (status: ${status}): ${message}`);
+        } else {
+          throw error;
+        }
+      }
 
       if (job.status === "completed" && job.downloadUrl) {
         if (saveTo) {
